@@ -1,0 +1,44 @@
+<!-- 
+File: Assignment3.html
+Gui Assignment: Creating A Multiplication Table
+Description: This website provides a webpage where the user is prompted to input a starting and ending value between 
+-50 and 50.  The values will create a multiplication table between the numbers that were given in an organized table format.  If the 
+user were to try and input a value lower than -50 and higher than 50, it will give a message on the text box asking them to insert a number
+that is valid.  If the user tried to enter anything but a number like a letter, it will also give a message asking the user to input a valid number
+
+Zuriel Pagan, UMass Lowell Computer Science, zuriel_pagan@student.uml.edu
+Copywright (c) 2024 by Zuriel.  All rights reserved.  May be freely copied or excerpted for educational purposes with credit to the author.
+updated by ZP on May 31, 2024 at 4:26pm
+updated by ZP on June 2, 2024 at 9:30pm
+updated by ZP on june 3, 2024 at 5:06pm
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Table Generator</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Multiplication Table Generator</h1>
+        <form id="tableForm">
+            <label for="startH">Start Horizontal:</label>
+            <input type="number" id="startH" name="startH" min="-50" max="50" required>
+            <label for="endH">End Horizontal:</label>
+            <input type="number" id="endH" name="endH" min="-50" max="50" required>
+            <label for="startV">Start Vertical:</label>
+            <input type="number" id="startV" name="startV" min="-50" max="50" required>
+            <label for="endV">End Vertical:</label>
+            <input type="number" id="endV" name="endV" min="-50" max="50" required>
+            <button type="submit">Generate Table</button>
+        </form>
+        <div id="error"></div>
+        <div id="tableContainer">
+            <table id="multiplicationTable"></table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

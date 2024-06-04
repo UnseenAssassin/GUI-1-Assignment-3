@@ -1,0 +1,97 @@
+/* File: Style.css
+Gui Assignment: Creating A Multiplication Table
+Description: This file is responsible for the customization of the font and colors for the table.  This file is also responsible for the webpage and 
+how it is organized.  It is also responsible for the coor of the button.
+
+Zuriel Pagan, UMass Lowell Computer Science, zuriel_pagan@student.uml.edu
+Copywright (c) 2024 by Zuriel.  All rights reserved.  May be freely copied or excerpted for educational purposes with credit to the author.
+updated by ZP on May 31, 2024 at 4:26pm
+updated by ZP on June 2, 2024 at 9:30pm
+updated by ZP on june 3, 2024 at 5:06pm*/
+
+/* Changes the font of the text*/
+body
+{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.container 
+{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+form 
+{
+    margin-bottom: 20px;
+}
+
+label 
+{
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input 
+{
+    padding: 5px;
+    margin-bottom: 10px;
+}
+/* Makes the color of the button*/
+button 
+{
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button:hover 
+{
+    background-color: #45a049;
+}
+
+#error 
+{
+    color: red;
+    margin-bottom: 20px;
+}
+
+#tableContainer 
+{
+    overflow: auto;
+    max-width: 100%;
+}
+
+table 
+{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td 
+{
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th 
+/* Changes the row and column background color of the numbers in the table that the user inputs*/
+{
+    background-color: #fbb7c2;
+    position: sticky;
+    top: 0;
+}
+/* Chnages the background color of the even row*/
+td:nth-child(even) 
+{
+    background-color: #e7d2e1;
+}
+/*  Changes the background color of the odd row*/
+td:nth-child(odd) 
+{
+    background-color: #f5dddd;
+}
